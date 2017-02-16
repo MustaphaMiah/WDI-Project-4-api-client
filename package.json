@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Basically my final project...",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "bower install && gulp deploy"
-  },
   "author": "Muhammad Mustapha Miah <muhammad_mustapha_miah@live.co.uk>",
   "license": "ISC",
   "gulp": {
