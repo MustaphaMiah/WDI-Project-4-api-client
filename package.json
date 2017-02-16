@@ -1,9 +1,12 @@
 {
-  "name": "mustys-final-project",
+  "name": "wdi-project-4",
   "version": "1.0.0",
-  "description": "Basically my final project...",
+  "description": "Angular Front End with Rails Back End",
   "main": "index.js",
-  "author": "Muhammad Mustapha Miah <muhammad_mustapha_miah@live.co.uk>",
+  "scripts": {
+    "postinstall": "bower install && gulp deploy"
+  },
+  "author": "Hudhayfa Jamalkhan <hudhayfajamalkhan@gmail.com>",
   "license": "ISC",
   "gulp": {
     "srcDir": "src/",
