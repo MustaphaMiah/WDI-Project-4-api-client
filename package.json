@@ -1,12 +1,12 @@
 {
-  "name": "wdi-project-4",
+  "name": "footie-app",
   "version": "1.0.0",
-  "description": "Angular Front End with Rails Back End",
+  "description": "A example stack with gulp and angular",
   "main": "index.js",
   "scripts": {
     "postinstall": "bower install && gulp deploy"
   },
-  "author": "Hudhayfa Jamalkhan <hudhayfajamalkhan@gmail.com>",
+  "author": "Alex Chin <alex@alexchin.co.uk>",
   "license": "ISC",
   "gulp": {
     "srcDir": "src/",
