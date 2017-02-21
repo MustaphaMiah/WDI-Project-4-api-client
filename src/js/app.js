@@ -1,6 +1,6 @@
 angular
 .module('footie-app', [
-  'ui-router',
+  'ui.router',
   'ngResource',
   'angular-jwt'
 ]);
