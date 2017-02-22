@@ -1,9 +1,9 @@
 {
-  "name": "angular-gulp-setup",
-  "description": "A example stack with gulp and angular",
+  "name": "Find a PLAYA",
+  "description": "An app which allows you to recruit your local football player for your games.",
   "main": "index.js",
   "authors": [
-    "alexpchin <alex@alexchin.co.uk>"
+    "Muhammad Mustapha Miah <muhammad_mustapha_miah@live.co.uk>"
   ],
   "license": "ISC",
   "homepage": "",
@@ -19,6 +19,7 @@
     "angular-resource": "^1.6.2",
     "angular-ui-router": "^0.4.2",
     "angular-jwt": "^0.1.9",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "skeleton": "^2.0.4"
   }
 }

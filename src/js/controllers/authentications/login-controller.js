@@ -9,9 +9,9 @@ function LoginCtrl(User, CurrentUserService, $state) {
   vm.login = () => {
     User
       .login(vm.user).$promise
-      .then(() => {
+      .then(data => {
         CurrentUserService.getUser();
-        $state.go('usersIndex');
+        $state.go('usersShow', {id: data.user.id});
       }, err => {
         console.log(err);
       });

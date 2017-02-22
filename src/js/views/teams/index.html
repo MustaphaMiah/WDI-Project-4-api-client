@@ -1,0 +1,10 @@
+<h1>Sign up for teams</h1>
+
+<ul>
+  <li ng-repeat="team in teamsIndex.teams">
+    <h5>{{team.name}}</h5>
+    <p>Managed by: {{team.team_owner.first_name}} {{team.team_owner.last_name}}</p>
+  </li>
+</ul>
+
+<h3 ng-show="teamsIndex.teams && !teamsIndex.teams.length">No teams to sign up for at the moment</h3>

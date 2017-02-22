@@ -7,7 +7,7 @@ function MainCtrl($rootScope, CurrentUserService, $state, $stateParams) {
   const vm = this;
 
   $rootScope.$on('loggedIn', () => {
-    vm.user = CurrentUserService.currentUser();
+    vm.user = CurrentUserService.currentUser;
   });
 
   $rootScope.$on('loggedOut', () => {
@@ -18,5 +18,12 @@ function MainCtrl($rootScope, CurrentUserService, $state, $stateParams) {
   vm.logout = () => {
     CurrentUserService.removeUser();
   };
+  
+  $(() => {
+    $('.menu').click(function() {
+      $(this).toggleClass('clicked');
+      $('.sidebar').toggleClass('show-sidebar hide-sidebar');
+    });
+  });
 
 }
