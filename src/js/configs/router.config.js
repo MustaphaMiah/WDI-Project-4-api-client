@@ -45,6 +45,11 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   url: '/js/views/teams/show.html',
   controller: 'TeamShowCtrl',
   controllerAs: 'teamsShow'
+})
+.state('teamNew', {
+  url: '/js/views/teams/new.html',
+  controller: 'TeamNewCtrl',
+  controllerAs: 'teamsNew'
 });
 
   $urlRouterProvider.otherwise('/');
