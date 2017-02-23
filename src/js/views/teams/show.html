@@ -17,7 +17,7 @@
 </div>
 
 <div ng-if="main.user.id !== teamsShow.team.team_owner.id && !teamsShow.hasSubmitted && teamsShow.team.spots_remaining > 0">
-  <button ng-click="teamsShow.submitRequest()">Sign up to this team!</button>
+  <button class="team"ng-click="teamsShow.submitRequest()">Sign up to this team!</button>
 </div>
 
 <div ng-if="main.user.id !== teamsShow.team.team_owner.id && teamsShow.hasSubmitted && teamsShow.team.spots_remaining > 0">

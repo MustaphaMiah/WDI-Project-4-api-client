@@ -1,13 +1,13 @@
 <h1>Players</h1>
 <div class="container">
 
-<div class="col-md-5 col-xs-4 media" ng-repeat="user in usersIndex.users">
-  <div class="media-left">
+  <div class="col-md-4 col-sm-6 col-xs-12 media" ng-repeat="user in usersIndex.users">
+    <div class="media-center">
       <img src="{{user.profile_img}}" alt="player image">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><a ui-sref="usersShow({id: user.id})">{{ user.username }}</a></h4>
+      <p>{{ user.email }}</p>
+    </div>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{ user.username }}</h4>
-    <p>{{ user.email }}</p>
-  </div>
-</div>
 </div>

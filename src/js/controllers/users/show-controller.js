@@ -11,6 +11,7 @@ function UsersShowCtrl(User, $stateParams, Team){
     .then(data => {
       console.log('user', data);
       vm.user = data;
+      console.log(data);
     });
 
   console.log('teams:', Team.query());
