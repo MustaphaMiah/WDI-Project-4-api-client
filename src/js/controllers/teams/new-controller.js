@@ -6,11 +6,12 @@ teamsNewCtrl.$inject = ['Team', '$state'];
 
 function teamsNewCtrl(Team, $state) {
   const vm = this;
-  vm.submit = () => {
+  vm.submitTeam = () => {
     Team
-    .save({team: vm.team})
+    .save({team: vm.newTeam})
     .$promise
     .then(data => {
+      console.log(data);
       $state.go('teamsIndex');
     });
   };

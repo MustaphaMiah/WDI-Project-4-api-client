@@ -41,15 +41,17 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   controller: 'TeamsIndexCtrl',
   controllerAs: 'teamsIndex'
 })
-.state('teamShow', {
-  url: '/js/views/teams/show.html',
-  controller: 'TeamShowCtrl',
-  controllerAs: 'teamsShow'
-})
-.state('teamNew', {
-  url: '/js/views/teams/new.html',
-  controller: 'TeamNewCtrl',
+.state('teamsNew', {
+  url: '/teams/new',
+  templateUrl: '/js/views/teams/new.html',
+  controller: 'TeamsNewCtrl',
   controllerAs: 'teamsNew'
+})
+.state('teamShow', {
+  url: '/teams/:id',
+  templateUrl: '/js/views/teams/show.html',
+  controller: 'TeamsShowCtrl',
+  controllerAs: 'teamsShow'
 });
 
   $urlRouterProvider.otherwise('/');

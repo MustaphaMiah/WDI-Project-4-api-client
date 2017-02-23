@@ -2,7 +2,7 @@
 
 <ul>
   <li ng-repeat="team in teamsIndex.teams">
-    <h5>{{team.name}}</h5>
+    <h5><a ui-sref="teamShow({id: team.id})">{{team.name}}</a></h5>
     <p>Managed by: {{team.team_owner.first_name}} {{team.team_owner.last_name}}</p>
   </li>
 </ul>

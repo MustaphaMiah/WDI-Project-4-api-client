@@ -1,4 +1,31 @@
-// Import all of your scss files here
 body {
-  background-color: #bada55;
+  // background-color: #21507F;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: url("/images/pitch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding-bottom: 364px;
+  opacity: 0.7;
+
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 167px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.media-body {
+  float: left;
+  margin-left: 95px;
+  margin-top: 25px;
 }
