@@ -3,7 +3,7 @@
   <img class="player"src="{{ usersShow.user.profile_img }}" alt="player image">
   <div class="">
     <ul>
-      <li ng-repeat="team in usersShow.user.teams"><a ui-sref="teamShow({ id: team.id})">{{team.name}}</a></li>
+      <li class ="prof" ng-repeat="team in usersShow.user.teams"><a ui-sref="teamShow({ id: team.id})">Teams: {{team.name}}</a></li>
     </ul>
   </div>
 </div>

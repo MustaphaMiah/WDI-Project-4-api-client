@@ -1,5 +1,5 @@
 <h1>{{teamsShow.team.name}}</h1>
-
+<div class="teams">
 <h2>Owner: {{teamsShow.team.team_owner.first_name}} {{teamsShow.team.team_owner.last_name}}</h2>
 
 <p ng-hide="teamsShow.team.requests.length">No one has signed up to this team yet.</p>
@@ -8,7 +8,7 @@
 <p ng-show="teamsShow.team.spots_remaining == 1">There is still {{teamsShow.team.spots_remaining}} spot remaining!</p>
 
 <div ng-show="teamsShow.team.requests.length">
-  <h4>Team members:</h4>
+  <h4>Recently Joined Members:</h4>
   <ul>
     <li ng-repeat="request in teamsShow.team.requests">
       <p>{{request.first_name_of_requester}} {{request.last_name_of_requester}}</p>
@@ -22,4 +22,5 @@
 
 <div ng-if="main.user.id !== teamsShow.team.team_owner.id && teamsShow.hasSubmitted && teamsShow.team.spots_remaining > 0">
   <p>Thank you for signing up to the team, You are a valued player !</p>
+</div>
 </div>
